@@ -11,6 +11,18 @@ export const useUserStore = defineStore('user', () => {
   const otherNames = computed(() => usedNames.value.filter(name => name !== savedName.value))
 
   /**
+   * token
+   */
+  const token = ref<string | undefined>(undefined)
+
+  /**
+   * get token
+   */
+  function getToken() {
+    return token.value || 'fakeToken'
+  }
+
+  /**
    * Changes the current name of the user and saves the one that was used
    * before.
    *
@@ -27,6 +39,7 @@ export const useUserStore = defineStore('user', () => {
     setNewName,
     otherNames,
     savedName,
+    getToken,
   }
 })
 
