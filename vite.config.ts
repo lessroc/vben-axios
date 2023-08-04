@@ -17,6 +17,25 @@ import VueMacros from 'unplugin-vue-macros/vite'
 import WebfontDownload from 'vite-plugin-webfont-dl'
 
 export default defineConfig({
+  server: {
+    proxy: {
+      '/basic-api': {
+        target: 'http://localhost:3333',
+        changeOrigin: true,
+        ws: true,
+        rewrite: path => path.replace(/^\/basic-api/, ''),
+        // only https
+        // secure: false,
+      },
+      '/upload': {
+        target: 'http://localhost:3333/upload',
+        changeOrigin: true,
+        ws: true,
+        rewrite: path => path.replace(/^\/upload/, ''),
+      },
+    },
+  },
+
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
