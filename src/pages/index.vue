@@ -11,6 +11,10 @@ function go() {
     router.push(`/hi/${encodeURIComponent(name.value)}`)
 }
 
+function goVbanAxios() {
+  router.push('/vban-axios-test')
+}
+
 const { t } = useI18n()
 </script>
 
@@ -45,6 +49,15 @@ const { t } = useI18n()
         @click="go"
       >
         {{ t('button.go') }}
+      </button>
+    </div>
+
+    <div>
+      <button
+        m-3 text-sm btn
+        @click="goVbanAxios"
+      >
+        vban-axios
       </button>
     </div>
   </div>
