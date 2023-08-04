@@ -19,7 +19,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 <br>
 
 <p align='center'>
-<b>English</b> | <a href="https://github.com/lessroc/vitesse/blob/vben-axios/README.zh-CN.md">简体中文</a>
+<b>English</b> | <a href="https://github.com/lessroc/vben-axios/blob/main/README.zh-CN.md">简体中文</a>
 <!-- Contributors: Thanks for getting interested, however we DON'T accept new transitions to the README, thanks. -->
 </p>
 
@@ -32,7 +32,7 @@ Mocking up web app with <b>Vitesse</b><sup><em>(speed)</em></sup><br>
 ## Features
 
 - The configuration items are extremely rich, adding flexible custom configuration and high encapsulation
-- Specific reference [http/axios](https://github.com/lessroc/vitesse/tree/vben-axios/src/utils/http/axios)
+- Specific reference [http/axios](https://github.com/lessroc/vben-axios/tree/main/src/utils/http/axios)
 
 ```ts
 function createAxios(opt?: Partial<CreateAxiosOptions>) {

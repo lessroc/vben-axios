@@ -21,7 +21,7 @@
 
 
 <p align='center'>
-<a href="https://github.com/lessroc/vitesse/blob/vben-axios/README.md">English</a> | <b>简体中文</b>
+<a href="https://github.com/lessroc/vben-axios/blob/main/README.md">English</a> | <b>简体中文</b>
 </p>
 
 <br>
@@ -33,7 +33,7 @@
 ## 特性
 
 - 配置项极其丰富，增加自定义配置灵活，封装度高
-- 具体参考 [http/axios](https://github.com/lessroc/vitesse/tree/vben-axios/src/utils/http/axios) 目录
+- 具体参考 [http/axios](https://github.com/lessroc/vben-axios/tree/main/src/utils/http/axios) 目录
 
 ```ts
 function createAxios(opt?: Partial<CreateAxiosOptions>) {
